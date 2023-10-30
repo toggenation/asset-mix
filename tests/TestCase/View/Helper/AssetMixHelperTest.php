@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace AssetMix\Test\TestCase\View\Helper;
@@ -6,7 +7,7 @@ namespace AssetMix\Test\TestCase\View\Helper;
 use AssetMix\Mix;
 use AssetMix\View\Helper\AssetMixHelper;
 use Cake\Core\Configure;
-use Cake\Filesystem\Folder;
+
 use Cake\Http\ServerRequest;
 use Cake\Routing\Router;
 use Cake\TestSuite\TestCase;
@@ -46,8 +47,8 @@ class AssetMixHelperTest extends TestCase
 
         parent::tearDown();
 
-        $dir = new Folder(TEST_APP_DIR . 'webroot');
-        $dir->delete();
+        $dir = rmdir(TEST_APP_DIR . 'webroot');
+        // $dir->delete();
 
         $this->_cleanUp();
 
