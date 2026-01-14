@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace AssetMix\View\Helper;
@@ -19,7 +20,7 @@ class AssetMixHelper extends Helper
      *
      * @var array<string>
      */
-    protected $helpers = ['Html', 'Url'];
+    protected array $helpers = ['Html', 'Url'];
 
     /**
      * Creates a link element for CSS stylesheets with versioned asset.
