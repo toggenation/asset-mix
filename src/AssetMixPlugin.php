@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace AssetMix;
@@ -11,7 +12,7 @@ use Cake\Core\PluginApplicationInterface;
 /**
  * Plugin for AssetMix
  */
-class Plugin extends BasePlugin
+class AssetMixPlugin extends BasePlugin
 {
     /**
      * Add console commands for the plugin.
